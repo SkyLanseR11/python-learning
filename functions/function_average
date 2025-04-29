@@ -1,0 +1,10 @@
+def mean(*args):
+    numbers = [arg for arg in args 
+               if type(arg) in (int, float)]
+    avg = sum(num for num in numbers) / len(numbers)
+
+    if len(numbers) > 0:
+            return avg
+    return 0.0
+
+print(mean(1.5, True, ['stepik'], 'beegeek', 2.5, (1, 2)))
